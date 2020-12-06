@@ -16,7 +16,7 @@ Android Version: 5.1 (Lollipop) or above
 There are no specific minimum hardware requirements. The app is very small (less than 4 MB) at this stage. So it can run even on the even on the most potato device. However, this may change as the app size will grow in future and new features will added. 
 
 ### Installation:
-1. Locate the apk. It's under cryptME->build->outputs->apk->debug->app-debug.apk.
+1. Locate the apk. It's under app/app-debug.apk. Click on app-debug.apk.
 2. Download the apk. 
 3. Turn on the "Allow installation from unknown sources" setting on your device.
 4. Click on the downloaded apk and install it. 

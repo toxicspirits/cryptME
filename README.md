@@ -1,5 +1,5 @@
 # cryptME 
-######  CryptME (V1.0) by theHonors
+######  CryptME (V1.0) by toxicspirits
 **CryptME** is an open-source encryption application for Android. cryptME allows you to encrypt your data. The application uses **Advanced Encryption Standard (AES)**. It features a simple and easy to use UI that anyone can use to encrypt their confidential data. 
 
 

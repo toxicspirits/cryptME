@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                    <EditText
+                        android:id="@+id/dec_ciphertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:background="#00000000"
+                        android:hint="Text to decrypt"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#9C9C9C"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/iconfinder_key_298808" />
+
+                <EditText
+                    android:id="@+id/dec_secretkey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="#00000000"
+                    android:hint="Secret Key"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:singleLine="true"
+                    android:textColorHint="#9C9C9C"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+                <EditText
+                    android:id="@+id/dec_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="#00000000"
+                    android:hint="IV"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:singleLine="true"
+                    android:textColorHint="#9C9C9C"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4a5a71"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@mipmap/plaintext_main" />
+
+                    <TextView
+                        android:id="@+id/dec_plaintext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="#00000000"
+                        android:hint="Decrypted Text"
+                        android:letterSpacing="0.1"
+                        android:textColor="#fff"
+                        android:textColorHint="#9C9C9C"
+                        android:textSize="16dp"
+                        android:textIsSelectable="true">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4a5a71"></LinearLayout>
+
+                <Button
+                    android:id="@+id/decBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="67dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:letterSpacing="0.2"
+                    android:padding="16dp"
+                    android:text="DECRYPT"
+                    android:textColor="#d9e5f3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logomakr_5duyll" />
+
+</RelativeLayout>

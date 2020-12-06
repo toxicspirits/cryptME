@@ -23,13 +23,13 @@ There are no specific minimum hardware requirements. The app is very small (less
 
 ## Usage:
 
-Using the application is pretty straight-forward and basic. After opening the application you'll have he main screen with two options: Encrypt & Decrypt.
+Using the application is pretty straight-forward and basic. After opening the application you'll have the main screen with two options: Encrypt & Decrypt.
 
-Click on Encrypt to encrypt some data. Enter the data you want to encrypt and click encrypt. You can then store the encrypted text, the Secret Key and IV someplace safe. (See cautions)
+Click on Encrypt to encrypt some data. Enter the data you want to encrypt and click encrypt. You can then store the encrypted text, the Secret Key and IV someplace safe. (See Usage warning)
 
 To decrypt the data, enter the encypted data, your secret key and IV and click decrypt. 
 
-## Usage warning
+## Usage precautions:
 
 While this application is safe by every means, there are still few shortcomings that this app itself cannot overcome. Such as:
 

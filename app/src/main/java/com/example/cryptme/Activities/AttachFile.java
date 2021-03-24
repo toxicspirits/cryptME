@@ -35,7 +35,6 @@ public class AttachFile extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.attach_file);
         final Button attachBtn = (Button)findViewById(R.id.attachBtn);
         attachBtn.setOnClickListener(this);
-        EditText editText = (EditText)findViewById(R.id.enc_plaintext);
     }
     public static final int PERMISSION_REQUEST_STORAGE = 1;
     private static final int FILE_PICKER = 2;
@@ -72,14 +71,9 @@ public class AttachFile extends AppCompatActivity implements View.OnClickListene
                 uri = data.getData();
                 try {
                     System.out.println(readTextFromUri(uri));
-                    String plaindata = readTextFromUri(uri);
-                    EditText plaintext = (EditText)findViewById(R.id.enc_plaintext);
-                    plaintext.setText(readTextFromUri(uri));
-  
 
-
-
-                } catch (IOException e) {
+                }
+                catch (IOException e) {
                     e.printStackTrace();
                 }
 

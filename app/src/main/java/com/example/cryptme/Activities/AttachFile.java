@@ -73,10 +73,9 @@ public class AttachFile extends AppCompatActivity implements View.OnClickListene
                 try {
                     System.out.println(readTextFromUri(uri));
                     String plaindata = readTextFromUri(uri);
-                    Intent intent = new Intent(this, EncryptionActivity.class);
                     EditText plaintext = (EditText)findViewById(R.id.enc_plaintext);
                     plaintext.setText(readTextFromUri(uri));
-                    intent.putExtra()
+  
 
 
 
